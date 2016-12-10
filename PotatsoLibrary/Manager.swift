@@ -309,9 +309,9 @@ extension Manager {
         mainConf["logdir"] = logDir
         mainConf["mmdbpath"] = maxminddbPath
         mainConf["global-mode"] = defaultToProxy
-//        mainConf["debug"] = 1024+65536+1
+        mainConf["debug"] = 1024+65536+1
 //        mainConf["debug"] = 131071
-        mainConf["debug"] = mainConf["debug"] as! Int + 4096
+//        mainConf["debug"] = mainConf["debug"] as! Int + 4096
         mainConf["actionsfile"] = userActionUrl.path!
 
         let mainContent = mainConf.map { "\($0) \($1)"}.joinWithSeparator("\n")

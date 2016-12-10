@@ -28,7 +28,7 @@ class FeedbackManager {
         } else if AppEnv.isAppStore {
             tags.append("store")
         }
-        NSNotificationCenter.defaultCenter().postNotificationName(LogglyLoggerForceUploadNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().postNotificationName(LogglyLoggerForceUploadNotification, object: nil)
         HelpshiftSupport.setUserIdentifier(User.currentUser.id)
         HelpshiftSupport.setMetadataBlock { () -> [NSObject : AnyObject]! in
             return [
